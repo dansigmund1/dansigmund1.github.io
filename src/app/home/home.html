@@ -1,0 +1,59 @@
+<div class="home-container">
+  <nav class="navbar" role="tablist">
+    <button
+      class="nav-btn"
+      [class.active]="activeTab === 'skls'"
+      role="tab"
+      [attr.aria-selected]="activeTab === 'skls'"
+      (click)="switchTab('skls')">
+      Biography
+    </button>
+    <button
+      class="nav-btn"
+      [class.active]="activeTab === 'edu'"
+      role="tab"
+      [attr.aria-selected]="activeTab === 'edu'"
+      (click)="switchTab('edu')">
+      Education
+    </button>
+    <button
+      class="nav-btn"
+      [class.active]="activeTab === 'ints'"
+      role="tab"
+      [attr.aria-selected]="activeTab === 'ints'"
+      (click)="switchTab('ints')">
+      Interests
+    </button>
+  </nav>
+
+  <div class="tab-content">
+    @if (activeTab === 'skls') {
+      <section class="tab-panel">
+        <h2>Skills</h2>
+        <div class="skills-table">
+          @for (skill of skills; track skill.skill_name) {
+            <div class="entry">
+              <span class="entry-title">{{ skill.skill_name }}</span>
+              <span class="entry-logo">
+                <img [src]="skill.skill_logo" [alt]="skill.skill_name" />
+              </span>
+              <span class="entry-description">{{ skill.skill_des }}</span>
+            </div>
+          }
+          </div>
+      </section>
+    }
+    @if (activeTab === 'edu') {
+      <section class="tab-panel">
+        <h2>Education</h2>
+        <p>Coming soon.</p>
+      </section>
+    }
+    @if (activeTab === 'ints') {
+      <section class="tab-panel">
+        <h2>Interests</h2>
+        <p>Coming soon.</p>
+      </section>
+    }
+  </div>
+</div>
