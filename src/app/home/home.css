@@ -171,6 +171,105 @@
   padding: 0.75rem 1.25rem;
 }
 
+.education-container {
+  padding: 2rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.edu-card {
+  background-color:rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.edu-card.villanova {
+  border-top: 3px solid #0a2947;
+}
+
+.edu-card.bchigh {
+  border-top: 3px solid #791f3a;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-circle.purple {
+  background-color: rgba(128, 0, 128, 0.2);
+}
+
+.icon-circle.teal {
+  background-color: rgba(0, 128, 128, 0.2);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.school-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(172, 176, 198);
+  margin: 0;
+}
+
+.years {
+  font-size: 0.75rem;
+  color: rgb(172, 176, 198);
+  margin: 0;
+}
+
+.degree {
+  font-size: 0.85rem;
+  color: rgb(172, 176, 198);
+  margin: 0 0 1rem;
+}
+
+.achievements {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1rem;
+}
+
+.achievements-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgb(172, 176, 198);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+}
+
+.achievements ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  color: rgb(172, 176, 198);
+  line-height: 1.8;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

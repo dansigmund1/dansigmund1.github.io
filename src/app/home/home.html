@@ -46,7 +46,50 @@
     @if (activeTab === 'edu') {
       <section class="tab-panel">
         <h2>Education</h2>
-        <p>Coming soon.</p>
+        <div class="education-container">
+          <div class="education-grid">
+            <div class="edu-card villanova">
+              <div class="card-header">
+                <div class="icon-circle purple">
+                  <!-- <span class="icon">icon</span> -->
+                   <img src="villanova.png" alt="nova_img" class="icon"/>
+                </div>
+                <div class="school-info">
+                  <p class="school-name">Villanova University</p>
+                  <p class="years">2019 - 2023</p>
+                </div>
+              </div>
+              <p class="degree">B.S. Computer Science - Minor in Engineering Entrpreneurship</p>
+              <div class="achievements">
+                <p class="achievements-label">Achievements</p>
+                <ul>
+                  <li>Achievement One</li>
+                  <li>Achievement Two</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="edu-card bchigh">
+              <div class="card-header">
+                <div class="icon-circle teal">
+                  <img src="bchigh.png" alt="bch_img" class="icon"/>
+                </div>
+                <div class="school-info">
+                  <p class="school-name">Boston College High School</p>
+                  <p class="years">2015 - 2019</p>
+                </div>
+              </div>
+              <p class="degree">High School Diploma - Dorchester, MA</p>
+              <div class="achievements">
+                <p class="achievements-label">Achievements</p>
+                <ul>
+                  <li>Achievement One</li>
+                  <li>Achievement Two</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     }
     @if (activeTab === 'ints') {
